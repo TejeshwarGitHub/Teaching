@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group_1.com.teaching.RecyclerLoading">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_margin="16dp"
+            android:id="@+id/data_add_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/add_data_button"
+            android:layout_below="@+id/data_add_edit_text"
+            android:text="add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/linear_layout"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+
+
+</RelativeLayout>
